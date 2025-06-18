@@ -1,0 +1,30 @@
+.language {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    cursor: pointer;
+
+    .language__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        position: relative;
+    }
+
+    .language__text::after {
+        content: '';
+        position: absolute;
+        background-image: url('/assets/icons/Arrow.svg');
+        width: 9px;
+        height: 7px;
+        top: 7px;
+        right: -22.5px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .language {
+        display: none;
+    }
+}

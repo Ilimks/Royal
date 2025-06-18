@@ -1,0 +1,19 @@
+.boxArrow {
+    width: 245px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    border-radius: 22px;
+    padding: 10px 10px 10px 16px;
+    cursor: pointer;
+
+    .boxArrow__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+    }
+}

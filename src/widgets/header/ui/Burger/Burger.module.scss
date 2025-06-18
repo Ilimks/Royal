@@ -1,0 +1,57 @@
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+
+    .line {
+        height: 0;
+        border-top: 1px solid #fff;
+        transition: all 0.3s ease;
+        transform-origin: center;
+
+        &:nth-child(1) {
+            width: 10px;
+            align-self: flex-start;
+        }
+
+        &:nth-child(2) {
+            width: 21px;
+        }
+
+        &:nth-child(3) {
+            width: 10px;
+            align-self: flex-end;
+        }
+    }
+
+    &:hover {
+        .line:nth-child(1),
+        .line:nth-child(3) {
+            width: 21px;
+        }
+    }
+
+    &.active {
+        .line:nth-child(1) {
+            width: 21px;
+            align-self: center;
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .line:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .line:nth-child(3) {
+            width: 21px;
+            align-self: center;
+            transform: translateY(-6px) rotate(-45deg);
+        }
+    }
+}

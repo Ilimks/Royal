@@ -1,0 +1,113 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 31px 0 47px;
+
+
+    .filter__up {
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        border-radius: 27.5px;
+        overflow: hidden;
+        background-color: #00665e;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        padding: 8px;
+
+        .item {
+            padding: 10px 20px;
+            height: 39px;
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+        }
+
+        .active {
+          background-color: #fff;
+          color: #000;
+          border-radius: 19.5px;
+        }
+
+        .inactive {
+          background-color: transparent;
+          color: #fff;
+        }
+    }
+
+    .filter__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .filter__bottom__left {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .filter__bottom__right {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px 27px;
+
+            .filter__bottom__right__left {
+                flex-wrap: wrap;
+                display: flex;
+                column-gap: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .filter {
+        gap: 20px;
+        padding: 17px 0 50px;
+    
+    
+        .filter__up {
+            background: #fff;
+            border-radius: 24.5px;
+            height: 49px;
+    
+            .item {
+                padding: 8px 20px;
+                height: 33px;
+            }
+    
+            .active {
+              background: #f7f7f5;
+              color: #000;
+              border-radius: 16.5px;
+            }
+    
+            .inactive {
+              color: #000;
+            }
+        }
+    
+        .filter__bottom {
+            gap: 25px;
+    
+            .filter__bottom__left {
+                gap: 8px;
+            }
+    
+            .filter__bottom__right {
+                gap: 25px 10px;
+    
+                .filter__bottom__right__left {
+                    gap: 8px 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@media(max-width: 500px) {
+    .choose {
+        padding: 20px 0 33px;
+    
+        .choose__box {
+    
+            .choose__up {
+                gap: 0;
+    
+                .choose__text {
+                    font-size: 12px;
+                }
+        
+                .choose__title {
+                    font-size: 22px;
+                }
+            }
+    
+            .choose__bottom {
+                gap: 30px 0;
+            }
+    
+            .choose__btn {
+                padding-top: 58px;
+            }
+        }
+    }
+}

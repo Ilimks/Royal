@@ -1,0 +1,25 @@
+.box {
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    padding: 10px 20px;
+    height: 39px;
+    border-radius: 19.5px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.box:hover {
+    background: #dbdada;
+}
+
+@media(max-width: 500px) {
+    .box {
+        padding: 8px 20px;
+        height: 33px;
+        border-radius: 16.5px;
+        font-size: 14px;
+    }
+}

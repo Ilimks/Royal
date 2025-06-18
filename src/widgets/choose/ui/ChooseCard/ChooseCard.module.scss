@@ -1,0 +1,93 @@
+.card {
+    max-width: 630px;
+    position: relative;
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 50px;
+        color: #000;
+    }
+
+    .card__status__mobile {
+        display: none;
+    }
+
+    .card__items {
+        display: flex;
+        column-gap: 25px;
+        align-items: center;
+        padding: 20px 0 15px;
+
+        .card__status {
+            border-radius: 16px;
+            padding: 8px 10px 7.5px;
+            background: rgba(94, 255, 0, 0.15);
+
+            .card__status__text {
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                color: #018e0d;
+            }
+        }
+
+        .card__status__location {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            color: #2e2e2e;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .card__status__location::after {
+            content: '';
+            position: absolute;
+            background-image: url('/assets/icons/Location.svg');
+            width: 20px;
+            height: 20px;
+            top: -1px;
+            left: 0;
+        }
+
+        .card__status__type {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            color: #2e2e2e;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .card__status__type::after {
+            content: '';
+            position: absolute;
+            background-image: url('/assets/icons/Home.svg');
+            width: 20px;
+            height: 20px;
+            top: -1px;
+            left: 0;
+        }
+    }
+
+    .card__start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 157px;
+        padding: 10px 10px 8px;
+        border-radius: 18.5px;
+        background: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: 130px;
+        left: 14px;
+
+        .card__start__text {
+            font-family: var(--second-family);
+            font-weight: 500;
+            font-size: 14px;
+            color: #000;
+        }
+    }
+}
