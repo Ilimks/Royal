@@ -46,7 +46,7 @@ export const useRoyalScroll = (maxScroll = 700) => {
     height: currentSize.height
   };
   const royalEnd: RoyalPosition = {
-    top: '10%',
+    top: '9%',
     left: '50%',
     width: 50 * aspectRatio,
     height: 11
